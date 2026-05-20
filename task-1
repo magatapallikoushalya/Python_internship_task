@@ -1,1 +1,0 @@
-# Python_internship_task
