@@ -16,5 +16,3 @@ This repository contains Python internship tasks.
 - task4.py
 - task5.py
 
-## Author
-Kaushalya Magatapalli
