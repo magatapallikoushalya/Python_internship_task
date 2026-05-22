@@ -1,16 +1,25 @@
-balance = 1000
-print("Initial Balance:", balance)
+account = {
+    "name": "Kaushalya",
+    "balance": 1000
+}
 
-deposit = 500
-balance += deposit
-print("After Deposit:", balance)
+print("Account Holder:", account["name"])
+print("Initial Balance:", account["balance"])
 
-withdraw = 300
-balance -= withdraw
-print("After Withdrawal:", balance)
+deposit = int(input("Enter deposit amount: "))
+account["balance"] += deposit
 
-balance *= 2
-print("After Interest:", balance)
+print("Balance After Deposit:", account["balance"])
 
-balance /= 2
-print("Final Balance:", balance)
+withdraw = int(input("Enter withdrawal amount: "))
+account["balance"] -= withdraw
+
+print("Balance After Withdrawal:", account["balance"])
+
+interest = int(input("Enter interest percentage: "))
+
+account["balance"] += (account["balance"] * interest / 100)
+
+print("Balance After Interest:", account["balance"])
+
+print("Final Balance:", account["balance"])
