@@ -1,9 +1,28 @@
-list1 = [1, 2, 3]
-list2 = [1, 2, 3]
-list3 = list1
 
-print("list1 is list2:", list1 is list2)
-print("list1 is not list2:", list1 is not list2)
+student1 = {
+    "roll_no": 101,
+    "name": "Kaushalya",
+    "course": "Python"
+}
 
-print("list1 is list3:", list1 is list3)
-print("list1 is not list3:", list1 is not list3)
+student2 = {
+    "roll_no": 102,
+    "name": "Rahul",
+    "course": "Java"
+}
+
+student3 = student1
+
+print("Student 1 Details:", student1)
+print("Student 2 Details:", student2)
+print("Student 3 Details:", student3)
+
+print("\nChecking Identity Operators\n")
+
+print("student1 is student2:", student1 is student2)
+
+print("student1 is not student2:", student1 is not student2)
+
+print("student1 is student3:", student1 is student3)
+
+print("student1 is not student3:", student1 is not student3)
